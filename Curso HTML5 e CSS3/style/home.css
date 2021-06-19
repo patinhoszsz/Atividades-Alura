@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+
+    justify-content: space-around;
+    height: 40vh;
+    width: 100%;
+    background-color: #D8DCD6;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+nav ul{
+    padding: 0 0 0 0;
+}
+
+nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+nav a:hover{
+    font-size: 22px;
+    color: #DBB40C;
+    text-decoration: underline;
+}
+
+.titulo-centralizado{
+    font-size: 2em;
+    text-align: center;
+    clear: left;
+    color: rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px orangered;
+}
+
+
+
+.titulo-centralizado:first-letter{
+    color: blueviolet;
+}
+
+.titulo-centralizado:before{
+    content: "{";
+}
+
+.titulo-centralizado:after{
+    content: "}";
+}
+
+p:first-line{
+    font-style: italic;
+}
+
+/*.principal{
+    display: inline-block;
+ 
+
+    height: 40vh;
+    width: 100%;
+    border: black solid 4px;
+}*/
+
+.utensilios{
+    height: 130px;
+    width: 180px;
+    float: left;
+}
+
+.principal p{
+    margin: 0 20px 20px 0;
+}
+
+.principal strong, em{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.mapa-alinhamento{
+     text-align: center;
+     background: linear-gradient( #D8DCD6 26%, #FEFEFE 47%);
+ }
+
+ .map{
+    width: 60%;
+ }
+
+.video{
+    margin: 1em;
+    text-align: center;
+}
+
+
+
+.copy{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+
+.beneficios{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.item-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    text-align: start;
+    line-height: 1.4;
+}
+.imagem-beneficios{
+    opacity: 100%;
+    box-shadow: 10px 10px 5px;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.1;
+    transition: .5s;
+}
+
+.itens:nth-child(2n){
+    font-weight: bold;
+}
+
+.itens{
+    list-style: none;
+}
+
+.itens:before{
+    content: "★";
+}
+
+/* somento o primero "P" after da img
+img + p{
+    background: cadetblue;
+}
+*/
+
+/*todos itens depois da imagem
+img ~ p{
+    background: chartreuse;
+}
+*/
+
+/*Só o filho direto do Main
+main > p{
+    background: brown;
+}
+*/
+
+/* igonora as tag com o id="missao 
+.principal p:not(#missao){
+    background: orange;
+}
+*/
+
+
+footer{
+    text-align: center;
+    height: 55vh;
+    width: 100%;
+    background-image: url(../image/bg.jpg);
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 375px){
+    header, .principal, .beneficios , .mapa-alinhamento{
+        width: auto;
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .map{
+        height: 40%;
+    }
+}

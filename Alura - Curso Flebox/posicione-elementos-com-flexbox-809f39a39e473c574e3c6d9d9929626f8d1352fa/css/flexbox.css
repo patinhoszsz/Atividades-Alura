@@ -1,0 +1,138 @@
+/* HEADER */
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+
+    .cabecalhoPrincipal .container{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    
+}
+
+/* MAIN */
+
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px){
+
+    .conteudoPrincipal-cursos{
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .videoSobre .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .videoSobre-sobre{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+
+/* FOOTER */
+
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+   /* "quebra de linha quando chegar a altura maxima do pai" flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+    height: 250px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5%;
+    width: 70%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .rodapePrincipal-patrocinadores-list{
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
+
+    .videoSobre-video{
+        flex-grow: 1;
+        flex-shrink: 2; /* Que o video diminua 2 vezes mais do que o Alurinha */
+    }
+
+    .videoSobre-sobre-list{
+        flex-grow: 1;
+    }
+
+    .rodapePrincipal{
+        width: auto;
+    }
+}

@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+
+    justify-content: space-around;
+
+    height: 40vh;
+    width: 100%;
+
+    background-color: #D8DCD6;
+}
+
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 128vh;
+    margin: 15px 0px;
+}
+
+form label, form p , form legend{
+    display: block;
+    font-size: 20px;
+}
+
+.input-padrao{
+    display: block;
+    padding: 10px 10px;
+    margin: 20px 10px;
+}
+
+
+textarea{
+    padding: 5px 10px;
+}
+
+.checkbox{
+    margin: 12px 0;
+}
+
+.enviar{
+    padding: 3.5px 10px;
+    width: 160px;
+    height: 40px;
+    background-color: #FDB147;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+table{
+    margin: 30px 0;
+}
+
+thead{
+    background-color: #E17701;
+    color: white;
+} 
+
+td , th{
+    border: black solid 1px;
+}
+
+
+.enviar:hover{
+    background-color: #E17701;
+    transition: 1s all;
+    transform: scale(1.1) rotate(10deg);
+}
+
+
+
+nav{
+    position: relative;
+    top: 50%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+nav a{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+nav a:hover{
+    font-size: 23px;
+    color: #DBB40C;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    height: 55vh;
+    width: 100%;
+    background-image: url(../image/bg.jpg);
+    padding: 30px 0;
+}
+
+.copy{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0;
+}
