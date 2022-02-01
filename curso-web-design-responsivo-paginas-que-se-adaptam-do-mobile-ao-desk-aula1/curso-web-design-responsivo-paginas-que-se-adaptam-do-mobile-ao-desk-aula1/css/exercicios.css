@@ -1,0 +1,80 @@
+.secao{
+  float: left;
+  width: 33%;
+}
+.mini{
+  float: left;
+  width: 50%;
+}
+
+/*Projeto 1 - atividade o2*/
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.logo,
+.secao {
+    padding: 0 1%;
+}
+
+/*Projeto 2 - atividade 02*/
+
+img {
+  max-width: 100%;
+}
+
+/*Projeto 3 - atividade 02*/
+
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-principal li {
+    float: left;
+}
+
+/*Projeto 4 - atividade 02*/
+
+header {
+  padding: 0.5em 0;
+}
+.destaques {
+  margin-top: 1em;
+}
+.barra-nav {
+  margin: 0.4em 0;
+}
+
+/*Projeto 1 - atividade 03 Media Queries*/
+
+@media (min-width: 600px) {
+  html {
+      font-size: 1.125em;
+  }
+}
+@media (min-width: 1000px) {
+  html {
+      font-size: 1.25em;
+  }
+}
+
+/*Projeto 2 - atividade 03 Media Queries*/
+.secao {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .secao {
+      width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .secao {
+      width: 33.333%;
+  }
+}
